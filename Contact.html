@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<style>
+  * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    body {
+    overflow-x: hidden;
+    }        
+
+    .navbar {
+        height: 8vh;
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+
+    .navbar1 {
+        height: 13vh;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        color: black;
+    }
+
+    .img1 {
+        position: absolute;
+        left: 10%;
+        top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .box {
+        background-color: #da9046;
+        height: 13vh;
+        width: 70%;
+        position: absolute;
+        left: 30%;
+    }
+
+    .btn1 {
+        padding: 32px;
+        position: absolute;
+        left: 84%;
+        background-color: black;
+        color: white;
+    }
+
+    .btn1:hover {
+        color: black;
+        background-color: white;
+    }
+    .mainsection1{
+        width: 100%;
+        height: 100vh;
+       
+    }
+    .maincontainer2{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+}
+.box31{
+    width: 25%;
+    height: 90vh;
+   background-color: #182323;
+    position: absolute;
+    top: 240px;
+    left: 8%;
+}
+.inbox31{
+    border-radius:50px 50px 50px 50px;
+    background-color: #d29751;
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    height: 5vh;
+    width: 10%;
+    padding: 10px;
+}
+
+.inbox32{
+    border-radius:50px 50px 50px 50px;
+    background-color: #d29751;
+    position: absolute;
+    top: 190px;
+    left: 5%;
+    height: 5vh;
+    width: 10%;
+    padding: 10px;
+}
+.inbox33{
+    border-radius:50px 50px 50px 50px;
+    background-color: #d29751;
+    position: absolute;
+    top: 360px;
+    left: 5%;
+    height: 5vh;
+    width: 10%;
+    padding: 10px;
+}
+.box32{
+    width: 60%;
+    height: 90vh;
+  
+    position: absolute;
+    top: 240px;
+    left: 35%;
+}
+.box33{
+    background-color: #d29751;
+    width: 100%;
+    height: 29vh;
+    top: 130%;
+    position: absolute;
+}
+
+       
+        .form-group {
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+      
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: black;
+        }
+        
+        .submit-btn {
+            display: block;
+            width: 30%;
+            padding: 10px;
+            background-color:#d29751;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 16px;
+            position: absolute;
+            left: 2%;
+        }
+        .submit-btn:hover {
+            background-color: black;
+        }
+        .ar:hover{
+        color: #d29751;
+        }
+
+
+
+
+/* 
+        header {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+} */
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* header {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+} */
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    max-width: 1200px;
+    background-color:whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position:absolute ;
+left: 5%;
+}
+.bx{
+    width: 50%;
+    height: auto;
+    
+    
+    
+ 
+}
+.contact-form, .contact-info {
+    padding: 30px;
+}
+
+.contact-form {
+    flex: 2;
+    border-right: 1px solid #ddd;
+}
+
+.contact-info {
+    flex: 1;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-info p, .contact-info a {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contact-info a {
+    text-decoration: none;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:#d29751;
+}
+.mainsection4{
+    height: 100vh;
+    width: 100%;
+    
+    position: absolute;
+    top: 290%;
+}
+.btn2{
+    border-radius: 50px;
+    padding: 10px;
+    width: 10%;
+    background-color: #d29751;
+    top: 65%;
+    position: absolute;
+    left: 22%;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+}
+</style>
+<body>
+    <div class="navbar">
+        <p style="position: absolute; color: gray; left: 5%; top: 20px; font-size: 20px;">Welcome to our Relxtower</p>
+        <ion-icon style="position: absolute; left: 50.5%; top: 46%; color: gray;" name="call-outline"></ion-icon>
+        <p style="position: absolute; left: 52%; top: 20px; color: gray;">+8123456897 </p>
+        <ion-icon style="position: absolute; left: 60.5%; top: 50%;color: gray;" name="mail-outline"></ion-icon>
+        <p style="position: absolute; left: 62%; top: 20px;color: gray;">info@example.com</p>
+        <ion-icon style="position: absolute; left: 72.5%; top: 47%;color: gray;" name="time-outline"></ion-icon>
+        <p style="position: absolute; left: 74%; top: 20px;color: gray;">Mon-Fri: 8am - 7pm</p>
+
+    </div>
+    <div class="navbar1">
+        <img class="img1" src="https://zcube.in/relxtower/img/logo/logo.png" alt="">
+        <div class="box">
+            <ul class="nav">
+                <a style=" display: inline-block; margin-left: 5%; margin-top: 30px; font-size: 20px; color:black;"
+                    href="E:\Development\Course Web\Real estate\index1.html">
+                    <li>Home</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/About.html">
+                    <li>About us</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Services.html">
+                    <li>Services</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Appartment.html">
+                    <li>Apartments</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Team.html">
+                    <li>Team</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="E:\Development\Course Web\Real estate\Blog.html">
+                    <li>Blog</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color:black;"
+                    href="E:\Development\Course Web\Real estate\Contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="file:///E:/Development/Web%20Projects/front%20end%20development/Login%20and%20registration%20form/index.html"><button class="btn1">SIGN UP</button></a>
+                <ion-icon class="ion" style="position: absolute; left: 85%; top: 36px;color: white;"
+                    name="lock-closed-outline"></ion-icon>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mainsection1">
+        <h1 style="position: absolute; font-weight: 600; left: 41%; top:40%; color: white; font-size: 55px;">Contact us</h1>
+        <p style="position: absolute; left: 47%; top:52%; color: white; font-size: 15px; ">Home <span style="color: #da9046; position: absolute; left:130%;      font-size: 15px;">News</span></p>
+     <img style="width: 100%; height: 60vh;" src="./test-bg (1).jpg" alt="">
+    </div>
+
+    <!-- <div class="maincontainer2">
+        <img style="width: 100%; height: 159vh;" src="./contact_bg (1).jpg" alt="">
+        <h3 data-aos="zoom-in-up" style="font-size: 16px; letter-spacing: 2px; color: #d29751; font-weight: 500; position: absolute;top: 70px; left: 44%;">Contact</h3>
+           <h1 data-aos="zoom-in-up" style="font-weight: 700; font-size: 52px; position: absolute; top: 90px;  left: 36%; color:black;">Get in Touch</h1> 
+           <hr style="background-color: #d29751; width: 10%; padding: 2px; position: absolute; top: 150px;  left: 42%;">
+        <div class="box31">
+            <div class="inbox31">
+                <img style="width:70%; height: 5vh; position: absolute; top: 10px; left: 13%;"  src="./map.png" alt="">
+            </div>
+            <h2 style="color: #d29751; position: absolute; left: 5%; top: 70px; font-weight: 600;font-size: 30px;">Office Address</h2>
+            <p style="color: white; font-weight: 400; position: absolute; left: 5%; top: 110px;">380 St Kilda Road, Melbourne VIC 3004, Australia</p>
+                <hr style="background-color: #687068;position: absolute;top:160px; width: 95%; left: 2%;">
+            <div class="inbox32">
+                <img style="width:60%; height: 5vh; position: absolute; top: 10px; left: 18%;" src="./clock.png" alt="">
+            </div>
+            <h2 style="color: #d29751; position: absolute; left: 5%; top: 250px; font-weight: 600;font-size: 30px;">Working Hours</h2>
+            <p style="color: white; font-weight: 400; position: absolute; left: 5%; top: 290px;">Monday to Friday 09:00 to 18:30 and Saturday we work until 15:30</p>
+                <hr style="background-color: #687068;position: absolute;top:333px; width: 95%; left: 2%;">
+    
+            <div class="inbox33">
+                <img style="width:70%; height: 5vh; position: absolute; top: 10px; left: 13%;" src="./messenger.png" alt="">
+            </div>
+            <h2 style="color: #d29751; position: absolute; left: 5%; top: 420px; font-weight: 600;font-size: 30px;">Message Us</h2>
+            <p style="color: white; font-weight: 400; position: absolute; left: 5%; top: 460px;">We are always with you to solve your problem mail us : support@example.com</p>
+       
+    
+    
+        </div>
+        <div class="box32">
+            <form class="contact-form">
+                
+                <div class="form-group">
+                    <label style="color:black;" for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label style="color:black;" for="e-mail">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label style="color:black;" for="comment">Write Your Description</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+        <div class="box33">
+            <img style="position: absolute; left: 3%; top:39%; height: 8vh;" src="./c-logo1.png" alt="">
+            <img  style="position: absolute; left: 22%; top:39%; height: 8vh;" src="./c-logo2 (1).png" alt="">
+            <img  style="position: absolute; left: 39%; top:39%;  height :8vh;" src="./c-logo3 (1).png" alt="">
+            <img style="position: absolute; left: 53%; top:39%;  height :8vh;" src="./c-logo4 (1).png" alt="">
+            <img style="position: absolute; left: 68%; top:39%;  height :8vh;" src="./c-logo5.png" alt="">
+            <img style="position: absolute; left: 82%; top:39%;  height :8vh;" src="./c-logo6.png" alt="">
+     
+        </div>
+        </div>
+        <footer style="height:70vh; top: 280%;   background-color: #182323; position: absolute;  width: 100%; "> -->
+            <div class="container">
+               
+       
+                <div data-aos="zoom-in-up" class="contact-form">
+                    <h2>Let's Get Started</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-method">Preferred contact method</label>
+                            <select id="contact-method" name="contact-method">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="looking-for">What are you looking for?</label>
+                            <select id="looking-for" name="looking-for">
+                                <option value="buy">Buy</option>
+                                <option value="sell">Sell</option>
+                                <option value="rent">Rent</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit">Hire Us</button>
+                    </form>
+                </div>
+                <div class="bx">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27207.14333677463!2d74.32346765161866!3d31.527100898908447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904f756420511%3A0x5aeb05a0ea540447!2sBaig%20Real%20Estate!5e0!3m2!1sen!2s!4v1719143999737!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img style="height: 90vh;" src="https://5.imimg.com/data5/VK/SP/GLADMIN-7384233/real-estate-office-interior.png" alt="">
+                </div>
+            </div>
+
+
+
+
+            <div class="mainsection4">
+                <img data-aos="zoom-in-up" style="position: absolute; top:-1%; left: 55%; height: 100vh;" src="./07.png" alt="">
+            <h1 data-aos="fade-left" style="font-size: 60px; color:black; left: 7%; position: absolute; top: 40%;">“Real Estate Agents <br> You Can Rely On.”</h1>
+           <button data-aos="fade-left" class="btn2">Hire agent</button>
+        </div>
+            <footer style="height:70vh; top: 395%;   background-color: #182323; position: absolute;  width: 100%; ">
+            <img style="top: 100px; position: absolute; left: 10%;" src="./logo.png" alt="">
+            <p style="color: white; position: absolute; top:160px; left: 10%; line-height: 1.5;">Pellentesque habitant morbi tristique senectus et netus et fames acturpis <br> egestas. Vestibulum tortor quam, feugiat vitae, tempor sit amet, ante. Donec eu <br> libero sit amet quam egestas semper. mivitae est. Mauris placerat eleifend leo. <br> Quisque sit amet est et sapien.</p>
+            <p style=" color: white; position: absolute; top: 300px;  left: 10%;"><span style="color:white;"> Follow us at:</span>  : 
+                <ion-icon name="logo-facebook" ></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-skype"></ion-icon>
+             </p>   
+             <h1 style="color: white; position: absolute; top: 100px;left: 55%; font-size: 25px; color: #d29751;">Company News</h1>
+             <hr style="width: 4%; background-color: white; position: absolute;left: 55%; top: 140px; padding: 1px;">
+            <a class="ar" style="position: absolute; top: 160px; left: 55%; text-decoration: none; list-style: none; color: white;" href=""><p>Parteners</p></a> 
+            <a  class="ar" style="position: absolute; top: 190px; left: 55%; text-decoration: none; list-style: none; color: white;"  href=""><p>About us</p></a> 
+            <a  class="ar" style="position: absolute; top: 220px; left: 55%; text-decoration: none; list-style: none;color: white;"   class="ar" href=""><p>Career</p></a> 
+            <a  class="ar" style="position: absolute; top: 250px; left: 55%; text-decoration: none; list-style: none; color: white;"  href=""><p>Reviews</p></a> 
+            <a  class="ar" style="position: absolute; top: 280px; left: 55%; text-decoration: none; list-style: none;color: white;"  href=""><p>Terms and Conditions</p></a> 
+            <a  class="ar"style="position: absolute; top: 310px; left: 55%; text-decoration: none; list-style: none;color: white;"  href=""><p>Help</p></a>
+            
+            <h1 style="color: white; position: absolute; top: 100px;left: 75%; font-size: 25px; color: #d29751;">Useful Links</h1>
+             <hr style="width: 4%; background-color: white; position: absolute;left: 75%; top: 140px; padding: 1px;">
+            <a class="ar" style="position: absolute; top: 160px; left: 75%; text-decoration: none; list-style: none; color: white;" href=""><p>Home</p></a> 
+            <a  class="ar" style="position: absolute; top: 190px; left: 75%; text-decoration: none; list-style: none; color: white;"  href=""><p>About us</p></a> 
+            <a  class="ar" style="position: absolute; top: 220px; left: 75%; text-decoration: none; list-style: none;color: white;"   class="ar" href=""><p>Services</p></a> 
+            <a  class="ar" style="position: absolute; top: 250px; left: 75%; text-decoration: none; list-style: none; color: white;"  href=""><p>Project</p></a> 
+            <a  class="ar" style="position: absolute; top: 280px; left: 75%; text-decoration: none; list-style: none;color: white;"  href=""><p>Our Team</p></a> 
+            <a  class="ar"style="position: absolute; top: 310px; left: 75%; text-decoration: none; list-style: none;color: white;"  href=""><p>Latest Blog</p></a> 
+            <hr style="background-color:gray; left: 5%; width: 90%; position: absolute; top: 360px;">
+            <p style="color: white; position: absolute; top: 390px; left: 38%;">© 2020 @ Relxtower All design Zcube.</p>
+            </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

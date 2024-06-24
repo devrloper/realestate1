@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    body {
+    overflow-x: hidden;
+    }        
+
+    .navbar {
+        height: 8vh;
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+
+    .navbar1 {
+        height: 13vh;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        color: black;
+    }
+
+    .img1 {
+        position: absolute;
+        left: 10%;
+        top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .box {
+        background-color: #da9046;
+        height: 13vh;
+        width: 70%;
+        position: absolute;
+        left: 30%;
+    }
+
+    .btn1 {
+        padding: 32px;
+        position: absolute;
+        left: 84%;
+        background-color: black;
+        color: white;
+    }
+
+    .btn1:hover {
+        color: black;
+        background-color: white;
+    }
+    .mainsection1{
+        width: 100%;
+        height: 100vh;
+       
+    }
+    .mainsection2{
+        width: 100%;
+        height: 630vh;
+        
+    }
+    .box1{
+        height: 130vh;
+        width: 55%;
+        background-color:whitesmoke;
+        position: absolute;
+        top: 130%;
+        left: 10%;
+
+}
+.box1:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+    .btn2{
+        background: #d29751;
+    border-radius: 50px;
+    padding: 18px;
+    position:absolute;
+    top: 86%;
+    width: 20%;
+    left: 3%;
+    color: white;
+    border: 2px #d29751;
+    }
+    .btn2:hover{
+        background-color: black;
+    }
+    .box2{
+        width: 25%;
+        height: 25vh;
+        position: absolute;
+        top: 130%;
+        left: 70%;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
+    }
+    .inbox2{
+        height: 5.7vh;
+        width: 15%;
+        background-color: #d29751;
+        position: absolute;
+        top: 81px;
+        left: 75%;
+    }
+    .box3{
+        width: 25%;
+        height: 50vh;
+        position: absolute;
+        top: 165%;
+        left: 70%;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
+    }
+   .box3inbox1{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 70px;
+    left: 5%;
+   }
+   .box3inbox2{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 70px;
+    left: 35%;
+   }
+   .box3inbox3{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 70px;
+    left: 65%;
+   }
+   .box3inbox4{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 140px;
+    left: 5%;
+   }
+   .box3inbox5{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 140px;
+    left: 35%;
+   }
+   .box3inbox6{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 140px;
+    left: 65%;
+   }
+   .box3inbox7{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 210px;
+    left: 5%;
+   }
+   .box3inbox8{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 210px;
+    left: 35%;
+   }
+   .box3inbox9{
+position: absolute;
+    height: 9vh;
+    width: 25%;
+    background-color: black;
+    top: 210px;
+    left: 65%;
+   }
+  .box4{
+    width: 25%;
+        height: 25vh;
+        position: absolute;
+        top: 225%;
+        left: 70%;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
+  }
+.box4inbox1{
+    height: 9vh;
+    width: 18%;
+    border-radius:  50% ;
+    border: 2px solid black;
+    position: absolute;
+    top: 70px;
+    left: 8%;
+}
+.box4inbox1:hover{
+    background-color: #d29751;
+    border: 2px solid black;
+}
+.box4inbox2{
+    height: 9vh;
+    width: 18%;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 70px;
+    left: 30%;
+}
+.box4inbox2:hover{
+    background-color: #d29751;
+}
+.box4inbox3{
+    height: 9vh;
+    width: 18%;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 70px;
+    left: 52%;
+}
+.box4inbox3:hover{
+    background-color: #d29751;
+}
+.box4inbox4{
+    height: 9vh;
+    width: 18%;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 70px;
+    left: 74%;
+}
+.box4inbox4:hover{
+    background-color: #d29751;
+}
+.box5{
+
+        height: 130vh;
+        width: 55%;
+        background-color:whitesmoke;
+        position: absolute;
+        top: 270%;
+        left: 10%;
+
+}
+.box5:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.box6{
+
+height: 130vh;
+width: 55%;
+background-color:whitesmoke;
+position: absolute;
+top: 410%;
+left: 10%;
+
+}
+.box6:hover{
+box-shadow: 0px 0px 10px 10px #da9046;
+}
+.box7{
+
+height: 130vh;
+width: 55%;
+background-color:whitesmoke;
+position: absolute;
+top: 550%;
+left: 10%;
+
+}
+.box7:hover{
+box-shadow: 0px 0px 10px 10px #da9046;
+}
+.box8{
+
+height: 50vh;
+width: 55%;
+background-color:whitesmoke;
+position: absolute;
+top: 690%;
+left: 10%;
+
+}
+.box8:hover{
+box-shadow: 0px 0px 10px 10px #da9046;
+}
+.btn3{
+        background: #d29751;
+    border-radius: 50px;
+    padding: 18px;
+    position:absolute;
+    top: 80%;
+    width: 20%;
+    left: 3%;
+    color: white;
+    border: 2px #d29751;
+    }
+    .btn3:hover{
+        background-color: black;
+    }
+    .box9{
+        width: 25%;
+        height: 50vh;
+        position: absolute;
+        top: 260%;
+        left: 70%;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
+    }
+    .box10{
+        width: 25%;
+        height: 80vh;
+        position: absolute;
+        top: 320%;
+        left: 70%;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
+    }
+    .box11{
+        width: 25%;
+        height: 50vh;
+        position: absolute;
+        top: 410%;
+        left: 70%;
+        background-color: whitesmoke;
+        border: 3px solid whitesmoke;
+    }
+    .inbox12{
+        width: 27%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 5%;
+        top: 25%;
+    }
+    .inbox12:hover{
+        background-color: #d29751;
+    }
+    .inbox13{
+        width: 27%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 35%;
+        top: 25%;
+    }
+    .inbox13:hover{
+        background-color: #d29751;
+    }
+    .inbox14{
+        width: 27%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 65%;
+        top: 25%;
+    }
+    .inbox14:hover{
+        background-color: #d29751;
+    }
+    .inbox15{
+        width: 34%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 5%;
+        top: 45%;
+    }
+    .inbox15:hover{
+        background-color: #d29751;
+    }
+    .inbox16{
+        width: 28%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 43%;
+        top: 45%;
+    }
+    .inbox16:hover{
+        background-color: #d29751;
+    }
+    .inbox17{
+        width: 16%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 75%;
+        top: 45%;
+    }
+    .inbox17:hover{
+        background-color: #d29751;
+    }
+    .inbox18{
+        width: 27%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 5%;
+        top: 65%;
+    }
+    .inbox18:hover{
+        background-color: #d29751;
+    }
+    .inbox19{
+        width: 27%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 35%;
+        top: 65%;
+    }
+    .inbox19:hover{
+        background-color: #d29751;
+    }
+    .inbox20{
+        width: 27%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 65%;
+        top: 65%;
+    }
+    .inbox20:hover{
+        background-color: #d29751;
+    }
+    .inbox21{
+        width: 34%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 5%;
+        top: 83%;
+    }
+    .inbox21:hover{
+        background-color: #d29751;
+    }
+    .inbox22{
+        width: 28%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 43%;
+        top: 83%;
+    }
+    .inbox22:hover{
+        background-color: #d29751;
+    }
+    .inbox23{
+        width: 16%;
+        height: 6vh;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        position: absolute;
+        left: 75%;
+        top: 83%;
+    }
+    .inbox23:hover{
+        background-color: #d29751;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <p style="position: absolute; color: gray; left: 5%; top: 20px; font-size: 20px;">Welcome to our Relxtower</p>
+        <ion-icon style="position: absolute; left: 50.5%; top: 46%; color: gray;" name="call-outline"></ion-icon>
+        <p style="position: absolute; left: 52%; top: 20px; color: gray;">+8123456897 </p>
+        <ion-icon style="position: absolute; left: 60.5%; top: 50%;color: gray;" name="mail-outline"></ion-icon>
+        <p style="position: absolute; left: 62%; top: 20px;color: gray;">info@example.com</p>
+        <ion-icon style="position: absolute; left: 72.5%; top: 47%;color: gray;" name="time-outline"></ion-icon>
+        <p style="position: absolute; left: 74%; top: 20px;color: gray;">Mon-Fri: 8am - 7pm</p>
+
+    </div>
+    <div class="navbar1">
+        <img class="img1" src="https://zcube.in/relxtower/img/logo/logo.png" alt="">
+        <div class="box">
+            <ul class="nav">
+                <a style=" display: inline-block; margin-left: 5%; margin-top: 30px; font-size: 20px; color:black;"
+                    href="E:\Development\Course Web\Real estate\index1.html">
+                    <li>Home</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/About.html">
+                    <li>About us</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                 href="file:///E:/Development/Course%20Web/Real%20estate/Services.html">
+                    <li>Services</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Appartment.html">
+                    <li>Apartments</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Team.html">
+                    <li>Team</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="E:\Development\Course Web\Real estate\Blog.html">
+                    <li>Blog</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color:black;"
+                    href="E:\Development\Course Web\Real estate\Contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="file:///E:/Development/Web%20Projects/front%20end%20development/Login%20and%20registration%20form/index.html"><button class="btn1">SIGN UP</button></a>
+                <ion-icon class="ion" style="position: absolute; left: 85%; top: 36px;color: white;"
+                    name="lock-closed-outline"></ion-icon>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mainsection1">
+        <h1 style="position: absolute; font-weight: 600; left: 39%; top:40%; color: white; font-size: 55px;">New Feeds</h1>
+        <p style="position: absolute; left: 45%; top:52%; color: white; font-size: 15px; ">Home <span style="color: #da9046; position: absolute; left:130%;      font-size: 15px;">News</span></p>
+     <img style="width: 100%; height: 60vh;" src="./test-bg (1).jpg" alt="">
+    </div>
+    <div class="mainsection2">
+        <div data-aos="fade-right" class="box1">
+       <img  style="width: 100%;" src="https://zcube.in/relxtower/img/blog/inner_b1.jpg" alt="">
+       <img style="height: 3vh; position: absolute; left: 5%; top: 57%;" src="./user.png" alt="">
+       <p style="font-size: 13px; position: absolute; left: 8%; top: 57.5%; color: gray;">By ZCube</p>
+       <img  style="height: 3vh; position: absolute; left: 20%; top: 57%;" src="./bubble-chat.png" alt="">
+       <p style="font-size: 13px; position: absolute; left: 23%; top: 57.5%; color: gray;">35 comments</p>
+       <h1 style="font-size: 30px; left: 3%; top: 63%; position: absolute; color: #da9046">Lorem ipsum dolor sit amet, consectetur cing  <br> elit, sed do eiusmod tempor.</h1>
+       <p style="color: gray; position:absolute; top: 73%; left: 3%; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br> voluptate velit esse cillum dolore.</p>
+<a href=""><button class="btn2">Read More</button></a>
+    </div>
+
+        <div data-aos="flip-left" class="box2">
+            <h1 style="position: absolute; left: 27%; top: 20px;">SEARCH</h1>
+            <input style="position: absolute; top:80px; width: 70%; left: 13%; padding: 10px;" type="text" placeholder="Search Keyword">
+            <div class="inbox2">
+                <img style="position:absolute; ;left: 13%;top: 2px;" src="./find.png" alt="">
+            </div>
+             </div>
+        <div data-aos="flip-left" class="box3">
+            <h1 style="position: absolute; left: 25%; top: 20px;">Instagram</h1>
+      <div class="box3inbox1">
+        <img src="./insta_01.jpg" alt="">
+      </div>
+      <div class="box3inbox2">
+        <img src="./insta_02.jpg" alt="">
+      </div>
+      <div class="box3inbox3">
+        <img src="./insta_03.jpg" alt="">
+      </div>
+      <div class="box3inbox4">
+        <img src="./insta_04.jpg" alt="">
+      </div>
+      <div class="box3inbox5">
+        <img src="./insta_05.jpg" alt="">
+      </div>
+      <div class="box3inbox6">
+        <img src="./insta_06.jpg" alt="">
+      </div>
+      <div class="box3inbox7">
+        <img src="./insta_07.jpg" alt="">
+      </div>
+      <div class="box3inbox8">
+        <img src="./insta_08.jpg" alt="">
+      </div>
+      <div class="box3inbox9">
+        <img src="./insta_09.jpg" alt="">
+      </div>
+      
+        </div>
+        <div data-aos="flip-right" class="box4">
+            <h1 style="position: absolute; left: 25%; top: 20px;">Follow us</h1>
+            <div class="box4inbox1">
+                <ion-icon style="position: absolute; width: 100%; top: 10px;  height: 5vh;" name="logo-facebook"></ion-icon>
+              </div>
+              <div class="box4inbox2">
+                <ion-icon  style="position: absolute; width: 100%; top: 10px;  height: 5vh;" name="logo-instagram"></ion-icon>
+              </div>
+              <div class="box4inbox3">
+                <ion-icon  style="position: absolute; width: 100%; top: 10px;  height: 5vh;" name="logo-twitter"></ion-icon>
+              </div>
+              <div class="box4inbox4">
+                <ion-icon  style="position: absolute; width: 100%; top: 10px;  height: 5vh;" name="logo-wordpress"></ion-icon>
+            </div>
+        </div>
+        <div data-aos="flip-right" class="box5">
+            <img  style="width: 100%;" src="./inner_b2.jpg" alt="">
+            <img style="height: 3vh; position: absolute; left: 5%; top: 57%;" src="./user.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 8%; top: 57.5%; color: gray;">By ZCube</p>
+            <img  style="height: 3vh; position: absolute; left: 20%; top: 57%;" src="./bubble-chat.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 23%; top: 57.5%; color: gray;">35 comments</p>
+            <h1 style="font-size: 30px; left: 3%; top: 63%; position: absolute; color: #da9046">There are many variations passages of like consectetur lorem ipsum available.</h1>
+            <p style="color: gray; position:absolute; top: 73%; left: 3%; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br> voluptate velit esse cillum dolore.</p>
+     <a href=""><button class="btn2">Read More</button></a>
+         </div>
+         <div  data-aos="flip-up" class="box6">
+            <img  style="width: 100%;" src="./inner_b3.jpg" alt="">
+            <img style="height: 3vh; position: absolute; left: 5%; top: 57%;" src="./user.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 8%; top: 57.5%; color: gray;">By ZCube</p>
+            <img  style="height: 3vh; position: absolute; left: 20%; top: 57%;" src="./bubble-chat.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 23%; top: 57.5%; color: gray;">35 comments</p>
+            <h1 style="font-size: 30px; left: 3%; top: 63%; position: absolute; color: #da9046">I must explain to you how all this mistaken <br> idea of denouncing pleasure.</h1>
+            <p style="color: gray; position:absolute; top: 73%; left: 3%; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br> voluptate velit esse cillum dolore.</p>
+     <a href=""><button class="btn2">Read More</button></a>
+         </div>
+         <div  data-aos="flip-down" class="box7">
+            <img  style="width: 100%; height: 70vh;" src="./artworks-000460791399-zn9p7q-t500x500.jpg" alt="">
+            <img style="height: 3vh; position: absolute; left: 5%; top: 57%;" src="./user.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 8%; top: 57.5%; color: gray;">By ZCube</p>
+            <img  style="height: 3vh; position: absolute; left: 20%; top: 57%;" src="./bubble-chat.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 23%; top: 57.5%; color: gray;">35 comments</p>
+            <h1 style="font-size: 30px; left: 3%; top: 63%; position: absolute; color: #da9046">I must explain to you how all this mistaken <br> idea of denouncing pleasure.</h1>
+            <p style="color: gray; position:absolute; top: 73%; left: 3%; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br> voluptate velit esse cillum dolore.</p>
+     <a href=""><button class="btn2">Read More</button></a>
+         </div>
+         <div data-aos="zoom-in-up" class="box8">
+           
+            <img style="height: 3vh; position: absolute; left: 5%; top:20px;" src="./user.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 9%; top:22px; color: gray;">By ZCube</p>
+            <img  style="height: 3vh; position: absolute; left: 20%; top: 20px;" src="./bubble-chat.png" alt="">
+            <p style="font-size: 13px; position: absolute; left: 24%; top: 23px; color: gray;">35 comments</p>
+            <h1 style="font-size: 30px; left: 3%; top: 18%; position: absolute; color: #da9046">On the other hand, we denounce with of <br> righteous indignation and dislike men.</h1>
+            <p style="color: gray; position:absolute; top:43%; left: 3%; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br> labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco <br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <br> voluptate velit esse cillum dolore.</p>
+     <a href=""><button class="btn3">Read More</button></a>
+         </div>
+         <div data-aos="zoom-in" class="box9">
+            <h1 style="position: absolute; left: 25%; top: 20px;">Categories</h1>
+            <p style="top: 83px; position: absolute; color: gray; left: 5%;">Lifestyle</p>
+            <p style="top: 83px; position: absolute; color: gray; left: 85%;">(05)</p>
+            <hr style="width: 90%; top: 35%; position: absolute; color: gray; left:5%;">
+           
+            <p style="top: 125px; position: absolute; color: gray; left: 5%;"> Travel</p>
+            <p style="top: 125px; position: absolute; color: gray; left: 85%;">(34)</p>
+            <hr style="width: 90%; top:48%; position: absolute; color: gray; left:5%;">
+
+            <p style="top: 165px; position: absolute; color: gray; left: 5%;">Fashion</p>
+            <p style="top: 165px; position: absolute; color: gray; left: 85%;">(89)</p>
+            <hr style="width: 90%; top:60%; position: absolute; color: gray; left:5%;">
+
+            <p style="top: 210px; position: absolute; color: gray; left: 5%;">Music</p>
+            <p style="top: 210px; position: absolute; color: gray; left: 85%;">(92)</p>
+            <hr style="width: 90%; top:74%; position: absolute; color: gray; left:5%;">
+
+            <p style="top: 255px; position: absolute; color: gray; left: 5%;">Branding</p>
+            <p style="top: 255px; position: absolute; color: gray; left: 85%;">(56)</p>
+            <hr style="width: 90%; top:88%; position: absolute; color: gray; left:5%;">
+         </div>
+         <div  data-aos="zoom-in-left" class="box10">
+            <h1 style="position: absolute; left: 25%; top: 20px;">Feeds</h1>
+            <img style="position: absolute; top: 70px; left: 4%;" src="./post_01.jpg" alt="">
+            <h3 style="position: absolute; top: 70px; left: 35%;">Alonso kelina falao asiano pero</h3>
+            <ion-icon style="position: absolute; top: 118px; left: 35%;" name="time-outline"></ion-icon>
+            <p style="position: absolute; top: 118px; left: 42%;">1 Hour ago</p>
+
+            <img style="position: absolute; top: 150px; left: 4%;" src="./post_02.jpg" alt="">
+            <h3 style="position: absolute; top: 150px; left: 35%;">It is a long established fact that a reader</h3>
+            <ion-icon style="position: absolute; top: 200px; left: 35%;" name="time-outline"></ion-icon>
+            <p style="position: absolute; top: 200px; left: 42%;">3 Hour ago</p>
+
+            <img style="position: absolute; top: 230px; left: 4%;" src="./post_03.jpg" alt="">
+            <h3 style="position: absolute; top: 230px; left: 35%;">Many desktop publish packages and web</h3>
+            <ion-icon style="position: absolute; top: 280px; left: 35%;" name="time-outline"></ion-icon>
+            <p style="position: absolute; top: 280px; left: 42%;">6 Hour ago</p>
+
+            <img style="position: absolute; top: 310px; left: 4%;" src="./post_04.jpg" alt="">
+            <h3 style="position: absolute; top: 310px; left: 35%;">Various versions have evolved over the years</h3>
+            <ion-icon style="position: absolute; top: 360px; left: 35%;" name="time-outline"></ion-icon>
+            <p style="position: absolute; top: 360px; left: 42%;">8 Hour ago</p>
+
+            <img style="position: absolute; top: 390px; left: 4%;" src="./post_05.jpg" alt="">
+            <h3 style="position: absolute; top: 390px; left: 35%;">Photo booth anim 8-bit PBR 3 wolf moon.</h3>
+            <ion-icon style="position: absolute; top: 440px; left: 35%;" name="time-outline"></ion-icon>
+            <p style="position: absolute; top: 440px; left: 42%;">12 Hour ago</p>        
+        </div>
+        <div data-aos="zoom-in-down" class="box11">
+            <h1 style="position: absolute; left: 35%; top: 20px;">Tags</h1>
+            <div class="inbox12">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Travel</p>
+            </div>
+            <div class="inbox13">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Lifestyle</p>
+            </div>
+            <div class="inbox14">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Photo</p>
+            </div>
+            <div class="inbox15">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Adventures</p>
+            </div>
+            <div class="inbox16">
+            <p style="position: absolute; color: gray; left: 18%; top: 10px;">Musician</p>
+            </div>
+            <div class="inbox17">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">08</p>
+            </div>
+            <div class="inbox18">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Travel</p>
+            </div>
+            <div class="inbox19">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Lifestyle</p>
+            </div>
+            <div class="inbox20">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Photo</p>
+
+            </div>
+            <div class="inbox21">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Adventures</p>
+
+            </div>
+            <div class="inbox22">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;">Musician</p>
+
+            </div>
+            <div class="inbox23">
+                <p style="position: absolute; color: gray; left: 18%; top: 10px;"   >08</p>
+
+            </div>
+
+        </div>
+    </div>
+    <footer style="height:70vh;    background-color: #182323; position: absolute;  width: 100%; ">
+        <img style="top: 100px; position: absolute; left: 10%;" src="./logo.png" alt="">
+        <p style="color: white; position: absolute; top:160px; left: 10%; line-height: 1.5;">Pellentesque habitant morbi tristique senectus et netus et fames acturpis <br> egestas. Vestibulum tortor quam, feugiat vitae, tempor sit amet, ante. Donec eu <br> libero sit amet quam egestas semper. mivitae est. Mauris placerat eleifend leo. <br> Quisque sit amet est et sapien.</p>
+        <p style=" color: white; position: absolute; top: 300px;  left: 10%;"><span style="color:white;"> Follow us at:</span>  : 
+            <ion-icon name="logo-facebook" ></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-skype"></ion-icon>
+         </p>   
+         <h1 style="color: white; position: absolute; top: 100px;left: 55%; font-size: 25px; color: #d29751;">Company News</h1>
+         <hr style="width: 4%; background-color: white; position: absolute;left: 55%; top: 140px; padding: 1px;">
+        <a class="ar" style="position: absolute; top: 160px; left: 55%; text-decoration: none; list-style: none; color: white;" href=""><p>Parteners</p></a> 
+        <a  class="ar" style="position: absolute; top: 190px; left: 55%; text-decoration: none; list-style: none; color: white;"  href=""><p>About us</p></a> 
+        <a  class="ar" style="position: absolute; top: 220px; left: 55%; text-decoration: none; list-style: none;color: white;"   class="ar" href=""><p>Career</p></a> 
+        <a  class="ar" style="position: absolute; top: 250px; left: 55%; text-decoration: none; list-style: none; color: white;"  href=""><p>Reviews</p></a> 
+        <a  class="ar" style="position: absolute; top: 280px; left: 55%; text-decoration: none; list-style: none;color: white;"  href=""><p>Terms and Conditions</p></a> 
+        <a  class="ar"style="position: absolute; top: 310px; left: 55%; text-decoration: none; list-style: none;color: white;"  href=""><p>Help</p></a>
+        
+        <h1 style="color: white; position: absolute; top: 100px;left: 75%; font-size: 25px; color: #d29751;">Useful Links</h1>
+         <hr style="width: 4%; background-color: white; position: absolute;left: 75%; top: 140px; padding: 1px;">
+        <a class="ar" style="position: absolute; top: 160px; left: 75%; text-decoration: none; list-style: none; color: white;" href=""><p>Home</p></a> 
+        <a  class="ar" style="position: absolute; top: 190px; left: 75%; text-decoration: none; list-style: none; color: white;"  href=""><p>About us</p></a> 
+        <a  class="ar" style="position: absolute; top: 220px; left: 75%; text-decoration: none; list-style: none;color: white;"   class="ar" href=""><p>Services</p></a> 
+        <a  class="ar" style="position: absolute; top: 250px; left: 75%; text-decoration: none; list-style: none; color: white;"  href=""><p>Project</p></a> 
+        <a  class="ar" style="position: absolute; top: 280px; left: 75%; text-decoration: none; list-style: none;color: white;"  href=""><p>Our Team</p></a> 
+        <a  class="ar"style="position: absolute; top: 310px; left: 75%; text-decoration: none; list-style: none;color: white;"  href=""><p>Latest Blog</p></a> 
+        <hr style="background-color:gray; left: 5%; width: 90%; position: absolute; top: 360px;">
+        <p style="color: white; position: absolute; top: 390px; left: 38%;">© 2020 @ Relxtower All design Zcube.</p>
+        </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

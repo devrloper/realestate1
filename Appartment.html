@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appartment</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    body {
+    overflow-x: hidden;
+    }        
+
+    .navbar {
+        height: 8vh;
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+
+    .navbar1 {
+        height: 13vh;
+        width: 100%;
+        background-color: black;
+        position: relative;
+        color: black;
+    }
+
+    .img1 {
+        position: absolute;
+        left: 10%;
+        top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .box {
+        background-color: #da9046;
+        height: 13vh;
+        width: 70%;
+        position: absolute;
+        left: 30%;
+    }
+
+    .btn1 {
+        padding: 32px;
+        position: absolute;
+        left: 84%;
+        background-color: black;
+        color: white;
+    }
+
+    .btn1:hover {
+        color: black;
+        background-color: white;
+    }
+    .mainsection1{
+        width: 100%;
+        height: 100vh;
+       
+    }
+    .mainsection2{
+        height: 150vh;
+    width: 100%;
+    background-color:whitesmoke;
+    
+}
+.box1{
+    height: 60vh;
+    width: 50%;
+    background-color: aliceblue;
+    top: 145%;
+    position: absolute;
+    left: 5%;
+    border-radius: 50px 50px 50px 50px;
+}
+.box1:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.box2{
+    height: 60vh;
+    width: 50%;
+    background-color: aliceblue;
+    top: 210%;
+    position: absolute;
+    left: 45%;
+    border-radius: 50px 50px 50px 50px;
+}
+.box2:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.btn2{
+    position: absolute;
+    top: 185%;
+    left: 58%;
+    padding: 10px;
+    width: 12%;
+    border-radius:  20px 20px 20px 20px;
+    background-color: #d29751;
+    color: white;
+}
+.btn2:hover{
+    background-color:black;
+    color: white;
+}
+.btn3{
+    position: absolute;
+    top: 245%;
+    left: 8%;
+    padding: 10px;
+    width: 12%;
+    border-radius:  20px 20px 20px 20px;
+    background-color: #d29751;
+    color: white;
+}
+.btn3:hover{
+    background-color:black;
+    color: white;
+}
+.mainsection3{
+        height: 160vh;
+    width: 100%;
+
+    
+}
+.box3{
+    height: 60vh;
+    width: 50%;
+    background-color: aliceblue;
+    top: 300%;
+    position: absolute;
+    left: 5%;
+    border-radius: 50px 50px 50px 50px;
+}
+.box3:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.box4{
+    height: 60vh;
+    width: 50%;
+    background-color: aliceblue;
+    top: 365%;
+    position: absolute;
+    left: 45%;
+    border-radius: 50px 50px 50px 50px;
+}
+.box4:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.btn4{
+    position: absolute;
+    top: 335%;
+    left: 58%;
+    padding: 10px;
+    width: 12%;
+    border-radius:  20px 20px 20px 20px;
+    background-color: #d29751;
+    color: white;
+}
+.btn4:hover{
+    background-color:black;
+    color: white;
+}
+.btn5{
+    position: absolute;
+    top: 398%;
+    left: 8%;
+    padding: 10px;
+    width: 12%;
+    border-radius:  20px 20px 20px 20px;
+    background-color: #d29751;
+    color: white;
+}
+.btn5:hover{
+    background-color:black;
+    color: white;
+}
+.mainsection4{
+        height: 160vh;
+    width: 100%;
+    background-color:whitesmoke;
+    
+}
+.box5{
+    height: 60vh;
+    width: 50%;
+    background-color: aliceblue;
+    top: 460%;
+    position: absolute;
+    left: 5%;
+    border-radius: 50px 50px 50px 50px;
+}
+.box5:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.box6{
+    height: 60vh;
+    width: 50%;
+    background-color: aliceblue;
+    top:525%;
+    position: absolute;
+    left: 45%;
+    border-radius: 50px 50px 50px 50px;
+}
+.box6:hover{
+    box-shadow: 0px 0px 10px 10px #da9046;
+}
+.btn6{
+    position: absolute;
+    top: 495%;
+    left: 58%;
+    padding: 10px;
+    width: 12%;
+    border-radius:  20px 20px 20px 20px;
+    background-color: #d29751;
+    color: white;
+}
+.btn6:hover{
+    background-color:black;
+    color: white;
+}
+.btn7{
+    position: absolute;
+    top: 565%;
+    left: 8%;
+    padding: 10px;
+    width: 12%;
+    border-radius:  20px 20px 20px 20px;
+    background-color: #d29751;
+    color: white;
+}
+.btn7:hover{
+    background-color:black;
+    color: white;
+}
+</style>
+<body>
+    <div class="navbar">
+        <p style="position: absolute; color: gray; left: 5%; top: 20px; font-size: 20px;">Welcome to our Relxtower</p>
+        <ion-icon style="position: absolute; left: 50.5%; top: 46%; color: gray;" name="call-outline"></ion-icon>
+        <p style= "position: absolute; left: 52%; top: 20px; color: gray;">+8123456897 </p>
+        <ion-icon style="position: absolute; left: 60.5%; top: 50%;color: gray;" name="mail-outline"></ion-icon>
+        <p style="position: absolute; left: 62%; top: 20px;color: gray;">info@example.com</p>
+        <ion-icon style="position: absolute; left: 72.5%; top: 47%;color: gray;" name="time-outline"></ion-icon>
+        <p style="position: absolute; left: 74%; top: 20px;color: gray;">Mon-Fri: 8am - 7pm</p>
+
+    </div>
+    <div class="navbar1">
+        <img class="img1" src="https://zcube.in/relxtower/img/logo/logo.png" alt="">
+        <div class="box">
+            <ul class="nav">
+                <a style=" display: inline-block; margin-left: 5%; margin-top: 30px; font-size: 20px; color:black;"
+                    href="E:\Development\Course Web\Real estate\index1.html">
+                    <li>Home</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/About.html">
+                    <li>About us</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Services.html">
+                    <li>Services</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="file:///E:/Development/Course%20Web/Real%20estate/Appartment.html">
+                    <li>Apartments</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="E:\Development\Course Web\Real estate\Team.html">
+                    <li>Team</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color: black;"
+                    href="E:\Development\Course Web\Real estate\Blog.html">
+                    <li>Blog</li>
+                </a>
+                <a style=" display: inline-block; margin-left: 40px;  margin-top: 30px; font-size: 20px;  color:black;"
+                    href="E:\Development\Course Web\Real estate\Contact.html">
+                    <li>Contact</li>
+                </a>
+                <a href="file:///E:/Development/Web%20Projects/front%20end%20development/Login%20and%20registration%20form/index.html"><button class="btn1">SIGN UP</button></a>
+                <ion-icon class="ion" style="position: absolute; left: 85%; top: 36px;color: white;"
+                    name="lock-closed-outline"></ion-icon>
+
+            </ul>
+        </div>
+    </div>
+    <div class="mainsection1">
+        <h1 style="position: absolute; font-weight: 600; left: 41%; top:40%; color: white; font-size: 55px;">Apartment</h1>
+        <p style="position: absolute; left: 48%; top:52%; color: white; font-size: 15px; ">Home <span style="color: #da9046; position: absolute; left:130%;      font-size: 15px;">News</span></p>
+     <img style="width: 100%; height: 60vh;" src="./test-bg (1).jpg" alt="">
+    </div>
+   <div class="mainsection2">
+    <h1 style="color: black; top:830px; left: 28%; position: absolute; font-weight: 900; font-size: 45px;">One room Apartments</h1>
+    <h1 style="position: absolute; left:58%; color:#d29751; top: 160%;">Luxrious One Room White <br> Theme Apartment</h1>
+    <h2 style="position: absolute; left:58%; color: #d29751; top: 175%;">Price:2500$</h2>
+    <button class="btn2">Book Now</button>
+    <div class="box1">
+        <img  data-aos="fade-right" style="width: 100%;  border-radius: 50px 50px 50px 50px;" src="./maxresdefault.jpg" alt="">
+        
+    </div>
+    <h1 style="position: absolute; left:8%; color:#d29751; top: 220%;">Luxrious One Room Brown <br> Theme Apartment</h1>
+    <h2 style="position: absolute; left:8%; color: #d29751; top: 235%;">Price:2500$</h2>
+    <button class="btn3">Book Now</button>
+    <div class="box2">
+        <img data-aos="fade-left" style="width: 100%; height: 60vh; border-radius: 50px 50px 50px 50px;" src="./one room (2).jpg" alt="">
+    </div>
+   
+   </div>
+   <div class="mainsection3">
+    <h1 style="color:black; top:280%; left: 28%; position: absolute; font-weight: 900; font-size: 45px;">Luxury Appartment</h1>
+    <h1 style="position: absolute; left:58%; color:#d29751; top: 310%;">Luxrious  White Theme <br> Apartment</h1>
+    <h2 style="position: absolute; left:58.5%; color: #d29751; top: 325%;">Price:3500$</h2>
+    <button class="btn4">Book Now</button>
+    <div class="box3">
+        <img  data-aos="fade-right" style="width: 100%; height: 60vh;  border-radius: 50px 50px 50px 50px;" src="./luxury3.jpg" alt="">
+        
+    </div>
+    <h1 style="position: absolute; left:8%; color:#d29751; top: 375%;">Luxrious  Brownish  Theme <br> Apartment</h1>
+    <h2 style="position: absolute; left:8%; color: #d29751; top: 390%;">Price:4500$</h2>
+    <button class="btn5">Book Now</button>
+    <div class="box4">
+        <img data-aos="fade-left" style="width: 100%; height: 60vh; border-radius: 50px 50px 50px 50px;" src="./luxury2.jpg" alt="">
+    </div>
+   
+   </div>
+   <div class="mainsection4">
+    <h1 style="color:black; top:440%; left: 28%; position: absolute; font-weight: 900; font-size: 45px;">Deluxe Appartment</h1>
+    <h1 style="position: absolute; left:58%; color:#d29751; top: 470%;">Deluxe brown <br> Theme Apartment</h1>
+    <h2 style="position: absolute; left:58.5%; color: #d29751; top: 485%;">Price:6500$</h2>
+    <button class="btn6">Book Now</button>
+    <div class="box5">
+        <img  data-aos="fade-right" style="width: 100%; height: 60vh;  border-radius: 50px 50px 50px 50px;" src="./652479bccbc4b382bf34234a_651d7bd20a901f9bff8b0315_12 (1).png" alt="">
+        
+    </div>
+    <h1 style="position: absolute; left:8%; color:#d29751; top: 540%;">Deluxe white <br> Theme Apartment</h1>
+    <h2 style="position: absolute; left:8%; color: #d29751; top: 555%;">Price:5500$</h2>
+    <button class="btn7">Book Now</button>
+    <div class="box6">
+        <img data-aos="fade-left" style="width: 100%; height: 60vh; border-radius: 50px 50px 50px 50px;" src="https://cdn.prod.website-files.com/6571b0d5f6a21b27d22bf02b/65d4be4900733559e5457301_3%20BED%20-%20BEDROOM%201-min.png" alt="">
+    </div>
+   </div>
+   <footer style="height:70vh; top: 591%;   background-color: #182323; position: absolute;  width: 100%; ">
+    <img style="top: 100px; position: absolute; left: 10%;" src="./logo.png" alt="">
+    <p style="color: white; position: absolute; top:160px; left: 10%; line-height: 1.5;">Pellentesque habitant morbi tristique senectus et netus et fames acturpis <br> egestas. Vestibulum tortor quam, feugiat vitae, tempor sit amet, ante. Donec eu <br> libero sit amet quam egestas semper. mivitae est. Mauris placerat eleifend leo. <br> Quisque sit amet est et sapien.</p>
+    <p style=" color: white; position: absolute; top: 300px;  left: 10%;"><span style="color:white;"> Follow us at:</span>  : 
+        <ion-icon name="logo-facebook" ></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-skype"></ion-icon>
+     </p>   
+     <h1 style="color: white; position: absolute; top: 100px;left: 55%; font-size: 25px; color: #d29751;">Company News</h1>
+     <hr style="width: 4%; background-color: white; position: absolute;left: 55%; top: 140px; padding: 1px;">
+    <a class="ar" style="position: absolute; top: 160px; left: 55%; text-decoration: none; list-style: none; color: white;" href=""><p>Parteners</p></a> 
+    <a  class="ar" style="position: absolute; top: 190px; left: 55%; text-decoration: none; list-style: none; color: white;"  href=""><p>About us</p></a> 
+    <a  class="ar" style="position: absolute; top: 220px; left: 55%; text-decoration: none; list-style: none;color: white;"   class="ar" href=""><p>Career</p></a> 
+    <a  class="ar" style="position: absolute; top: 250px; left: 55%; text-decoration: none; list-style: none; color: white;"  href=""><p>Reviews</p></a> 
+    <a  class="ar" style="position: absolute; top: 280px; left: 55%; text-decoration: none; list-style: none;color: white;"  href=""><p>Terms and Conditions</p></a> 
+    <a  class="ar"style="position: absolute; top: 310px; left: 55%; text-decoration: none; list-style: none;color: white;"  href=""><p>Help</p></a>
+    
+    <h1 style="color: white; position: absolute; top: 100px;left: 75%; font-size: 25px; color: #d29751;">Useful Links</h1>
+     <hr style="width: 4%; background-color: white; position: absolute;left: 75%; top: 140px; padding: 1px;">
+    <a class="ar" style="position: absolute; top: 160px; left: 75%; text-decoration: none; list-style: none; color: white;" href=""><p>Home</p></a> 
+    <a  class="ar" style="position: absolute; top: 190px; left: 75%; text-decoration: none; list-style: none; color: white;"  href=""><p>About us</p></a> 
+    <a  class="ar" style="position: absolute; top: 220px; left: 75%; text-decoration: none; list-style: none;color: white;"   class="ar" href=""><p>Services</p></a> 
+    <a  class="ar" style="position: absolute; top: 250px; left: 75%; text-decoration: none; list-style: none; color: white;"  href=""><p>Project</p></a> 
+    <a  class="ar" style="position: absolute; top: 280px; left: 75%; text-decoration: none; list-style: none;color: white;"  href=""><p>Our Team</p></a> 
+    <a  class="ar"style="position: absolute; top: 310px; left: 75%; text-decoration: none; list-style: none;color: white;"  href=""><p>Latest Blog</p></a> 
+    <hr style="background-color:gray; left: 5%; width: 90%; position: absolute; top: 360px;">
+    <p style="color: white; position: absolute; top: 390px; left: 38%;">© 2020 @ Relxtower All design Zcube.</p>
+    </footer>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
